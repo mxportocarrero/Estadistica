@@ -16,6 +16,32 @@ xs = [35.6,31,30,30.5,33.5,
     32.7,29.8,28.7,31.3,29.6,
     26.5,31.2,23,32.7,31.4,
     26.4,28.7,30.1,30.3,32.4]
+    
+print(max(xs),min(xs))
+print(max(xs)-min(xs))
+print((max(xs)-min(xs))/5.0)
+
+xs.sort()
+x=22.5
+lista = [0,0,0,0,0]
+cont = 0
+x += 2.62
+for i in xs:
+    if i <= x:
+        lista[cont] += 1
+    else:
+        lista[cont+1] +=1
+        x += 2.62
+        cont+=1
+
+print(lista,sum(lista))
+    
+
+
+
+
+print("xxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+print("xxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 xs1 = "VOVVAOVOVGOVAVGPVOGAVVOGOVVAGOVPVOOGOOVAGAOVOOGVAGGG"
 ys1 = []
